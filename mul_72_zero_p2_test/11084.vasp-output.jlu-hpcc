@@ -1,0 +1,131 @@
+Sender: LSF System <lsfadmin@c28b1>
+Subject: Job 11084: <mul_72> in cluster <hpc> Exited
+
+Job <mul_72> was submitted from host <login8> by user <software_zhou> in cluster <hpc> at Sun Feb 20 11:04:22 2022
+Job was executed on host(s) <36*c28b1>, in queue <vasp>, as user <software_zhou> in cluster <hpc> at Sun Feb 20 11:18:52 2022
+                            <36*c28b2>
+</data/home/software_zhou> was used as the home directory.
+</data/home/software_zhou/workplace/2_s/mul_72_zero_p2> was used as the working directory.
+Started at Sun Feb 20 11:18:52 2022
+Terminated at Sun Feb 20 11:18:57 2022
+Results reported at Sun Feb 20 11:18:57 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash 
+#BSUB -n 72
+#BSUB -q vasp
+#BSUB -J  mul_72
+#BSUB -R 'span[ptile=36]'
+#BSUB -o %J.vasp-output.jlu-hpcc
+#BSUB -e %J.vasp-error.jlu-hpcc
+#BSUB �Cm ��c28b1 c28b2��
+source /data/env/intel2020.profile
+mpirun /data/software/vasp.5.4.4/bin/vasp_std  
+
+python -m problem02
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: 9.
+
+Resource usage summary:
+
+    CPU time :                                   91.00 sec.
+    Max Memory :                                 890 MB
+    Average Memory :                             269.67 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              76
+    Max Threads :                                80
+    Run time :                                   6 sec.
+    Turnaround time :                            875 sec.
+
+The output (if any) follows:
+
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+ Error reading item 'VCAIMAGES' from file INCAR.
+使用图片： round/zero_220_120.png
+初始化位置上下限： -107 , 112
+大圆数目的初始解： 5
+小圆数目的初始解： 5
+
+
+PS:
+
+Read file <11084.vasp-error.jlu-hpcc> for stderr output of this job.
+

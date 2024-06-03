@@ -1,0 +1,11 @@
+#!/bin/bsh
+function batchrun()
+{
+	for ((i=0;i<$2;i++))
+	do
+		bsub < start.sh
+	done
+}
+INIT_PATH="/lustre/data/software_zhou/1_s/mul_72_round_p1"
+BATCH_NUM=10
+batchrun $INIT_PATH $BATCH_NUM

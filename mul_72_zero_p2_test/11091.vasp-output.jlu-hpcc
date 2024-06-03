@@ -1,0 +1,55 @@
+Sender: LSF System <lsfadmin@c28b1>
+Subject: Job 11091: <mul_72> in cluster <hpc> Exited
+
+Job <mul_72> was submitted from host <login8> by user <software_zhou> in cluster <hpc> at Sun Feb 20 11:04:22 2022
+Job was executed on host(s) <36*c28b1>, in queue <vasp>, as user <software_zhou> in cluster <hpc> at Sun Feb 20 11:19:28 2022
+                            <36*c28b2>
+</data/home/software_zhou> was used as the home directory.
+</data/home/software_zhou/workplace/2_s/mul_72_zero_p2> was used as the working directory.
+Started at Sun Feb 20 11:19:28 2022
+Terminated at Sun Feb 20 11:19:29 2022
+Results reported at Sun Feb 20 11:19:29 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash 
+#BSUB -n 72
+#BSUB -q vasp
+#BSUB -J  mul_72
+#BSUB -R 'span[ptile=36]'
+#BSUB -o %J.vasp-output.jlu-hpcc
+#BSUB -e %J.vasp-error.jlu-hpcc
+#BSUB ¨Cm ¡°c28b1 c28b2¡±
+source /data/env/intel2020.profile
+mpirun /data/software/vasp.5.4.4/bin/vasp_std  
+
+python -m problem02
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: 9.
+
+Resource usage summary:
+
+    CPU time :                                   0.18 sec.
+    Max Memory :                                 9 MB
+    Average Memory :                             6.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              7
+    Max Threads :                                9
+    Run time :                                   1 sec.
+    Turnaround time :                            907 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <11091.vasp-error.jlu-hpcc> for stderr output of this job.
+
